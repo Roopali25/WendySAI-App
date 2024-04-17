@@ -1,0 +1,10 @@
+name: wendy
+title:
+username: wendy-cbs
+account: wendy-cbs
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11774650
+bundleId: 8501467
+url: https://wendy-cbs.shinyapps.io/wendy/
+version: 1

@@ -1,0 +1,194 @@
+.bslib-page-navbar > .container-fluid {
+  padding: 0;
+}
+
+.tab-pane {
+  margin-top: 0 !important;
+}
+
+.control-label {
+  font-weight: bold;
+}
+
+.sup {
+  color: $primary;
+}
+
+.spacer {
+  height: 20px;
+}
+
+/* component classes */
+
+.widget-title {
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  position:relative;
+  margin-bottom: 40px;
+
+  &:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: $primary;
+  }
+}
+
+/* component styles */
+
+.branding {
+  margin-right: 80px;
+
+  .logo {
+    width: 200px;
+    vertical-align: middle;
+  }
+}
+
+.navbar-collapse {
+  .nav .nav-item,
+  .nav .nav-item:where(ul.nav.navbar-nav > li) > a.active {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .nav-underline .nav-item > a {
+    border: none;
+  }
+}
+
+.main-footer {
+  background-color: #0C121D;
+  color: #FFFFFF;
+  padding: 1rem;
+
+  @media(min-width: 768px) {
+    .footer-top-row {
+      gap: 2rem;
+    }
+
+    .footer-left,
+    .footer-right {
+      max-width: 300px
+    }
+  }
+
+  .social-links ul li {
+    list-style: none;
+  }
+
+  .footer-middle ul {
+    padding: 0;
+    gap: 2rem;
+  }
+  .social-links .social-icon {
+    width: 40px;
+  }
+}
+
+#home_page_slider {
+    max-height: 600px;
+    overflow: hidden;
+
+    img {
+        height: 600px;
+        widht: auto;
+    }
+}
+
+#home-block-1 {
+    p {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+}
+
+.info-graphic {
+    padding: 1rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .triangle {
+        width: 0px;
+        height: 0px;
+        border-style: inset;
+        border-width: 0 90px 130px 90px;
+        border-color: transparent transparent $primary transparent;
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+
+        p {
+            color: $white;
+            text-align: center;
+            top: 60px;
+            left: -47px;
+            position: relative;
+            width: 93px;
+            height: 93px;
+            margin: 0px;
+        }
+    }
+
+    .info-top {
+      font-size: .75rem;
+    }
+
+    .info-bottom {
+        font-size: .75rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+     ul {
+        padding: 0;
+
+        li {
+            list-style-type: none;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                margin-right: 1rem;
+                width: 10px;
+                height: 10px;
+                background-color: $primary;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    figcaption {
+      font-size: .75rem;
+    }
+}
+
+.footnotes {
+  font-size: .75rem;
+}
+
+#about-page-banner {
+  height: 400px;
+  background-image: url("../img/windfarm-5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-copyright-notice {
+  font-size: small;
+}
